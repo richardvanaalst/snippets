@@ -1,0 +1,19 @@
+#
+#  HTACCESS _WEBSITE_
+#
+
+Options +FollowSymlinks
+RewriteEngine On
+
+# Remove www
+#RewriteCond %{HTTP_HOST} ^www.website.com$ [NC]
+#RewriteRule ^(.*)$ http://website.com/$1 [R=301,L]
+
+# Add trailing slash
+#RewriteCond %{REQUEST_URI} !(/$|\.)
+#RewriteRule (.*) http://website.com/$1/ [R=301,L]
+
+# Rewrite to page, default to home => not a good idea: 404's!
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^([A-Za-z0-9-]+)(/?)$ index.php?p=$1 [L]

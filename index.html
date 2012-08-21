@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Code snippets</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/shCore.css" media="all">
+<link rel="stylesheet" href="css/shThemeDefault.css" media="all">
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="js/shScripts/shCore.js"></script>
+<script src="js/shScripts/shAutoloader.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/trace.js"></script>
+<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body id="top" class="body">
+
+<header id="header">
+	<h1 class="siteLabel"><a href="/richardvanaalst/_snippets/">Code Snippets</a></h1>
+
+	<nav id="nav">
+		<ul>
+			<li><a id="html-link" href="#html">HTML</a></li>
+			<li><a id="css-link" href="#css">CSS</a></li>
+			<li><a id="sass-link" href="#sass">SCSS</a></li>
+			<li><a id="js-link" href="#js">JS</a></li>
+			<li><a id="git-link" href="#git">Git</a></li>
+			<li><a id="svn-link" href="#svn">SVN</a></li>
+			<li><a id="links-link" href="#links">Links</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+<section id="html" class="section">
+	<h2>HTML</h2>
+
+	<article class="article">
+		<h4>HTML5 base page</h4>
+		<div class="code">
+<pre class="brush: html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="nl" dir="ltr"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content=""&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;link rel="shortcut icon" href="/favicon.ico"&gt;
+&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&gt;
+&lt;link rel="stylesheet" href="/css/style.css" media="all"&gt;
+&lt;script src="//code.jquery.com/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="/js/scripts.js"&gt;&lt;/script&gt;
+&lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div id="container"&gt;
+
+&lt;header id="header"&gt;
+	&lt;h1 class="siteLabel"&gt;
+		&lt;a class="siteLogo" href="/" title="Go to the homepage"&gt;Title&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;nav id="nav"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a class="menu home active" href="/" title="go to the home page"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class="menu sub1" href="/sub1/" title="go to the sub1 page"&gt;sub1&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class="menu sub2" href="/sub2/" title="go to the sub2 page"&gt;sub2&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;section class="section"&gt;
+	&lt;article class="article"&gt;
+		&lt;h1&gt;_header1_&lt;/h1&gt;
+		&lt;h2&gt;_header2_&lt;/h2&gt;
+		&lt;h3&gt;_header3_&lt;/h3&gt;
+		&lt;p&gt;_paragraph_&lt;/p&gt;
+	&lt;/article&gt;
+&lt;/section&gt;
+
+&lt;footer id="footer"&gt;
+	&lt;p&gt;Copyright &amp;copy; 2012&lt;/p&gt;
+&lt;/footer&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+		</div>
+	</article>
+
+	<article class="article">
+		<h4>XHTML 1.0 Strict base page</h4>
+		<div class="code" id="xhtml">
+<pre class="brush: html">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+&lt;meta name="description" content="" /&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /&gt;
+&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="/css/style.css" media="all" /&gt;
+&lt;script type="text/javascript" src="//code.jquery.com/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/js/scripts.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div id="container"&gt;
+
+&lt;div id="header"&gt;
+	&lt;h1 class="siteLabel"&gt;
+		&lt;a class="siteLogo" href="/" title="Go to the homepage"&gt;Title&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;div id="nav"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a class="menu home active" href="/" title="go to the home page"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class="menu sub1" href="/sub1/" title="go to the sub1 page"&gt;sub1&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class="menu sub2" href="/sub2/" title="go to the sub2 page"&gt;sub2&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="section"&gt;
+	&lt;div class="article"&gt;
+		&lt;h1&gt;_header1_&lt;/h1&gt;
+		&lt;h2&gt;_header2_&lt;/h2&gt;
+		&lt;h3&gt;_header3_&lt;/h3&gt;
+		&lt;p&gt;_paragraph_&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="footer"&gt;
+	&lt;p&gt;Copyright &amp;copy; 2012&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+		</div>
+	</article>
+</section>
+
+
+<section id="css" class="section">
+	<h2>CSS</h2>
+
+	<article class="article">
+		<h4>Wrap text to new line</h4>
+		<div class="code">
+<pre class="brush: css">
+pre {
+	word-wrap: break-word; /* normal, break-word */
+	white-space: pre-wrap; /* normal, nowrap, pre, pre-line, pre-wrap, inherit */
+}
+</pre>
+		</div>
+	</article>
+</section>
+
+
+<section id="sass" class="section">
+	<h2>SASS &amp; Compass</h2>
+
+	<article class="article">
+		<h4>Stop watching</h4>
+		<div class="code">
+			<pre class="brush: shell">CTRL-C</pre>
+		</div>
+	</article>
+
+	<h3>SASS</h3>
+	<article class="article">
+		<h4>Watch a file</h4>
+		<div class="code">
+			<pre class="brush: shell">sass --watch input.scss:output.css</pre>
+		</div>
+	</article>
+
+	<article class="article">
+		<h4>Watch a folder</h4>
+		<div class="code">
+			<pre class="brush: shell">sass --watch dir/scss:dir/css</pre>
+		</div>
+	</article>
+
+	<h3>Compass</h3>
+	<article class="article">
+		<h4>Create project</h4>
+		<div class="code">
+			<pre class="brush: shell">compass create project_name</pre>
+		</div>
+	</article>
+
+	<article class="article">
+		<h4>Watch a project</h4>
+		<div class="code">
+			<pre class="brush: shell">compass watch project_dir</pre>
+		</div>
+	</article>
+</section>
+
+
+<section id="js" class="section">
+	<h2>JS</h2>
+
+	<article class="article">
+		<h4>Open link in new tab (xhtml 1.0)</h4>
+		<div class="code">
+			<pre class="brush: js">onclick="window.open(this.href); return false;"</pre>
+		</div>
+	</article>
+
+	<article class="article">
+		<h4>Google Analytics minified</h4>
+			<div class="code">
+<pre class="brush: js">
+&lt;script&gt;var domain='example.com';var UACode='UA-12345678-1';
+var _gaq=_gaq||[];_gaq.push(['_setAccount',UACode]);_gaq.push(['_setDomainName',domain]);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script'); ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+&lt;/script&gt;
+</pre>
+		</div>
+	</article>
+</section>
+
+
+<section id="git" class="section">
+	<h2>Git</h2>
+
+	<article class="article">
+		<h4>Base</h4>
+		<div class="code">
+			<pre class="brush: bash">git clone</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">git pull</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">git push</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">git status</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">git diff</pre>
+		</div>
+	</article>
+
+	<article class="article">
+		<h4>Initialize an (empty) repository</h4>
+		<div class="code">
+<pre class="brush: bash">
+cd directory/of/project
+git init
+git add .
+git commit -a -m "Message"
+</pre>
+		</div>
+	</article>
+
+	<article id="commit-all" class="article">
+		<h4>Commit -all -message</h4>
+		<div class="code">
+			<pre class="brush: bash">git commit -a -m "Message"</pre>
+		</div>
+	</article>
+
+	<article class="article">
+		<h4>Switch branch</h4>
+		<div class="code">
+			<pre class="brush: bash">git checkout branchname</pre>
+		</div>
+	</article>
+</section>
+
+
+<section id="svn" class="section">
+	<h2>Subversion</h2>
+
+	<article class="article">
+		<h4>Base</h4>
+		<div class="code">
+			<pre class="brush: bash">cd directory/of/checkout</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">svn co repository_url directory_url</pre>
+			of
+			<pre class="brush: bash">svn checkout repository_url directory_url</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">svn up</pre>
+			of
+			<pre class="brush: bash">svn update</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">svn ci -m "Message"</pre>
+			of
+			<pre class="brush: bash">svn commit -m "Message"</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">svn status</pre>
+		</div>
+		<div class="code">
+			<pre class="brush: bash">svn diff</pre>
+		</div>
+	</article>
+
+	<article class="article">
+		<h4>Merge</h4>
+		<div class="code">
+			<pre class="brush: bash">svn merge url</pre>
+		</div>
+
+		<div class="example">
+			<h5>Merge from trunk to branch</h5>
+			<div class="code">
+				<pre class="brush: bash">svn merge ^/trunk</pre>
+			</div>
+		</div>
+
+		<div class="example">
+			<h5>Merge from revision XYZ to HEAD</h5>
+			<div class="code">
+				<pre class="brush: bash">svn merge -rXYZ:HEAD</pre>
+			</div>
+		</div>
+
+		<div class="example">
+			<h5>Merge changeset (revision) XYZ only</h5>
+			<div class="code">
+				<pre class="brush: bash">svn merge -c XYZ</pre>
+			</div>
+		</div>
+	</article>
+</section>
+
+
+<section id="links" class="section">
+	<h2>Links</h2>
+
+	<article class="article">
+		<h4>HTML5 Boilerplate</h4>
+		<div class="code">
+			<a class="external" href="http://html5boilerplate.com/"><span>html5boilerplate.com</span></a>
+		</div>
+	</article>
+
+	<article class="article">
+		<h4>Bootstrap</h4>
+		<div class="code">
+			<a class="external" href="http://twitter.github.com/bootstrap/">twitter.github.com/bootstrap/</a>
+		</div>
+	</article>
+</section>
+
+
+<footer id="footer">
+	<p>code snippets for html, css, js, sass & compass, git & svn</p>
+</footer>
+
+</body>
+</html>
