@@ -13,8 +13,6 @@ $(document).ready(function() {
 		var _s = 200,
 			_f = 'swing';
 
-		trace("scrollTo "+element.toString());
-
 		$('html, body').animate(
 			{scrollTop: $(element).offset().top},
 			_s,
@@ -40,7 +38,6 @@ $(document).ready(function() {
 
 
 	/*$('div.code').click(function(event) {
-		trace( $(this) +'; '+ this.getAttribute('class') );
 		// $(this).select();
 	});*/
 });
