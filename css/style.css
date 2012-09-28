@@ -457,14 +457,19 @@ a:hover, a:focus, a:active {
   color: #f60;
 }
 
-::-moz-selection,
+::-moz-selection {
+  color: #fff;
+  text-shadow: 0 -1px 0 #777777;
+  background-color: #a0a4a8;
+}
+
 ::selection {
   color: #fff;
   text-shadow: 0 -1px 0 #777777;
   background-color: #a0a4a8;
 }
 
-#header {
+.header {
   position: fixed;
   width: 960px;
   height: 20px;
@@ -492,22 +497,22 @@ a:hover, a:focus, a:active {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-#header:hover {
+.header:hover {
   top: 0;
   -webkit-box-shadow: 0 2px 16px -2px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 2px 16px -2px rgba(0, 0, 0, 0.4);
   box-shadow: 0 2px 16px -2px rgba(0, 0, 0, 0.4);
 }
 
-#nav {
+.nav {
   float: left;
   margin-left: 100px;
 }
-#nav li {
+.nav li {
   float: left;
   margin-right: 20px;
 }
-#nav a {
+.nav a {
   padding: 0px 4px;
   color: #f90;
   -webkit-transition-property: padding, color, background-color;
@@ -519,12 +524,12 @@ a:hover, a:focus, a:active {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-#nav a:before {
+.nav a:before {
   display: inline-block;
   content: '#';
   color: #aaa;
 }
-#nav a:hover, #nav a:focus {
+.nav a:hover, .nav a:focus {
   padding: 4px 4px;
   color: #fff;
   background-color: #f90;
@@ -532,30 +537,30 @@ a:hover, a:focus, a:active {
   -moz-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 white, inset 1px 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 white, inset 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
-#nav a:hover:before, #nav a:focus:before {
+.nav a:hover:before, .nav a:focus:before {
   color: #ff0;
 }
-#nav a:active {
+.nav a:active {
   position: relative;
   top: 1px;
 }
 
-.section {
+.syntax {
   padding-top: 120px;
 }
 
-.article {
+.snippet {
   width: 890px;
   margin: auto auto 30px auto;
 }
-.article .external {
+.snippet .external {
   overflow: hidden;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-.article .external::before {
+.snippet .external::before {
   display: inline;
   margin-right: .5em;
   content: "\003e";
@@ -566,16 +571,16 @@ a:hover, a:focus, a:active {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-.article .external:hover, .article .external:focus {
+.snippet .external:hover, .snippet .external:focus {
   margin-left: .5em;
   color: #f60;
 }
-.article .external:hover::before, .article .external:focus::before {
+.snippet .external:hover::before, .snippet .external:focus::before {
   margin-right: 1em;
   opacity: 1;
 }
-.article > .code,
-.article > .example > .code {
+.snippet > .code,
+.snippet > .example > .code {
   margin-bottom: 5px;
   padding: 2px;
   font: 1em/1.5em menlo, consolas, "courier new", fixed;
@@ -596,33 +601,33 @@ a:hover, a:focus, a:active {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.article > .code:hover,
-.article > .example > .code:hover {
+.snippet > .code:hover,
+.snippet > .example > .code:hover {
   color: #000;
   border-color: #ff0;
   -webkit-box-shadow: 0 0 4px 2px rgba(255, 160, 0, 0.6), inset 0 0 12px white;
   -moz-box-shadow: 0 0 4px 2px rgba(255, 160, 0, 0.6), inset 0 0 12px white;
   box-shadow: 0 0 4px 2px rgba(255, 160, 0, 0.6), inset 0 0 12px white;
 }
-.article > .example {
+.snippet > .example {
   margin: 2em 0 0 2em;
 }
-.article .syntaxhighlighter {
+.snippet .syntaxhighlighter {
   max-height: 260px;
   margin: 0 !important;
 }
-.article .syntaxhighlighter::-webkit-scrollbar {
+.snippet .syntaxhighlighter::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
-.article .syntaxhighlighter::-webkit-scrollbar-track {
+.snippet .syntaxhighlighter::-webkit-scrollbar-track {
   background: #e8f0ff;
   border-radius: 4px;
   -webkit-box-shadow: inset 1px 1px 4px rgba(96, 96, 96, 0.4);
   -moz-box-shadow: inset 1px 1px 4px rgba(96, 96, 96, 0.4);
   box-shadow: inset 1px 1px 4px rgba(96, 96, 96, 0.4);
 }
-.article .syntaxhighlighter::-webkit-scrollbar-thumb {
+.snippet .syntaxhighlighter::-webkit-scrollbar-thumb {
   width: 6px;
   height: 6px;
   background: #fff;
@@ -632,22 +637,29 @@ a:hover, a:focus, a:active {
   -moz-box-shadow: 1px 1px 4px -1px rgba(96, 96, 96, 0.4), inset -1px -1px 4px rgba(160, 160, 160, 0.4);
   box-shadow: 1px 1px 4px -1px rgba(96, 96, 96, 0.4), inset -1px -1px 4px rgba(160, 160, 160, 0.4);
 }
-.article .syntaxhighlighter::-webkit-scrollbar-thumb:hover {
+.snippet .syntaxhighlighter::-webkit-scrollbar-thumb:hover {
   border-color: #b0b4b8;
 }
-.article .syntaxhighlighter .line {
+.snippet .syntaxhighlighter .line {
   word-wrap: break-word !important;
   white-space: pre-wrap !important;
 }
+.snippet .syntaxhighlighter .toolbar {
+  display: none !important;
+}
 
-#footer {
+.footer {
   margin-top: 600px;
   overflow: hidden;
   font-size: .8em;
   color: #999999;
 }
 
-/*code,
+/*
+ * Orignal styling before usage of SyntaxHighlighter
+ *
+
+code,
 pre {
 	max-height: 200px;
 	margin: 1em 0;

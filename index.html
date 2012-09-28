@@ -19,10 +19,10 @@
 
 <body id="top" class="body">
 
-<header id="header">
+<header class="header">
 	<h1 class="siteLabel"><a href="">Code Snippets</a></h1>
 
-	<nav id="nav">
+	<nav class="nav">
 		<ul>
 			<li><a id="html-link" href="#html">HTML</a></li>
 			<li><a id="css-link" href="#css">CSS</a></li>
@@ -36,10 +36,10 @@
 </header>
 
 
-<section id="html" class="section">
+<section id="html" class="syntax">
 	<h2>HTML</h2>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>HTML5 base page</h4>
 		<div class="code">
 <pre class="brush: html">
@@ -73,8 +73,8 @@
 	&lt;/nav&gt;
 &lt;/header&gt;
 
-&lt;section class="section"&gt;
-	&lt;article class="article"&gt;
+&lt;section class="syntax"&gt;
+	&lt;article class="snippet"&gt;
 		&lt;h1&gt;_header1_&lt;/h1&gt;
 		&lt;h2&gt;_header2_&lt;/h2&gt;
 		&lt;h3&gt;_header3_&lt;/h3&gt;
@@ -93,7 +93,7 @@
 		</div>
 	</article>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>XHTML 1.0 Strict base page</h4>
 		<div class="code" id="xhtml">
 <pre class="brush: html">
@@ -127,8 +127,8 @@
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="section"&gt;
-	&lt;div class="article"&gt;
+&lt;div class="syntax"&gt;
+	&lt;div class="snippet"&gt;
 		&lt;h1&gt;_header1_&lt;/h1&gt;
 		&lt;h2&gt;_header2_&lt;/h2&gt;
 		&lt;h3&gt;_header3_&lt;/h3&gt;
@@ -149,10 +149,10 @@
 </section>
 
 
-<section id="css" class="section">
+<section id="css" class="syntax">
 	<h2>CSS</h2>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Wrap text to new line</h4>
 		<div class="code">
 <pre class="brush: css">
@@ -166,10 +166,10 @@ pre {
 </section>
 
 
-<section id="sass" class="section">
+<section id="sass" class="syntax">
 	<h2>SASS &amp; Compass</h2>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Stop watching</h4>
 		<div class="code">
 			<pre class="brush: shell">CTRL-C</pre>
@@ -177,14 +177,14 @@ pre {
 	</article>
 
 	<h3>SASS</h3>
-	<article class="article">
+	<article class="snippet">
 		<h4>Watch a file</h4>
 		<div class="code">
 			<pre class="brush: shell">sass --watch input.scss:output.css</pre>
 		</div>
 	</article>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Watch a folder</h4>
 		<div class="code">
 			<pre class="brush: shell">sass --watch dir/scss:dir/css</pre>
@@ -192,14 +192,14 @@ pre {
 	</article>
 
 	<h3>Compass</h3>
-	<article class="article">
+	<article class="snippet">
 		<h4>Create project</h4>
 		<div class="code">
 			<pre class="brush: shell">compass create project_name</pre>
 		</div>
 	</article>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Watch a project</h4>
 		<div class="code">
 			<pre class="brush: shell">compass watch project_dir</pre>
@@ -208,17 +208,17 @@ pre {
 </section>
 
 
-<section id="js" class="section">
+<section id="js" class="syntax">
 	<h2>JS</h2>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Open link in new tab (xhtml 1.0)</h4>
 		<div class="code">
 			<pre class="brush: js">onclick="window.open(this.href); return false;"</pre>
 		</div>
 	</article>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Google Analytics optimised</h4>
 			<div class="code">
 <pre class="brush: js">
@@ -234,10 +234,10 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 </section>
 
 
-<section id="git" class="section">
+<section id="git" class="syntax">
 	<h2>Git</h2>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Base</h4>
 		<div class="code">
 			<pre class="brush: bash">git clone</pre>
@@ -256,7 +256,7 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 		</div>
 	</article>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Initialize an (empty) repository</h4>
 		<div class="code">
 <pre class="brush: bash">
@@ -268,14 +268,14 @@ git commit -a -m "Message"
 		</div>
 	</article>
 
-	<article id="commit-all" class="article">
+	<article id="commit-all" class="snippet">
 		<h4>Commit -all -message</h4>
 		<div class="code">
 			<pre class="brush: bash">git commit -a -m "Message"</pre>
 		</div>
 	</article>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Switch branch</h4>
 		<div class="code">
 			<pre class="brush: bash">git checkout branchname</pre>
@@ -284,10 +284,10 @@ git commit -a -m "Message"
 </section>
 
 
-<section id="svn" class="section">
+<section id="svn" class="syntax">
 	<h2>Subversion</h2>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Base</h4>
 		<div class="code">
 			<pre class="brush: bash">cd directory/of/checkout</pre>
@@ -303,11 +303,6 @@ git commit -a -m "Message"
 			<pre class="brush: bash">svn update</pre>
 		</div>
 		<div class="code">
-			<pre class="brush: bash">svn ci -m "Message"</pre>
-			of
-			<pre class="brush: bash">svn commit -m "Message"</pre>
-		</div>
-		<div class="code">
 			<pre class="brush: bash">svn cleanup --non-interactive</pre>
 		</div>
 		<div class="code">
@@ -318,7 +313,25 @@ git commit -a -m "Message"
 		</div>
 	</article>
 
-	<article class="article">
+	<article class="snippet">
+		<h4>Add all recursively</h4>
+		<div class="code">
+			<pre class="brush: bash">svn add --force *</pre>
+		</div>
+	</article>
+
+	<article class="snippet">
+		<h4>Commit with message</h4>
+		<div class="code">
+			<pre class="brush: bash">svn ci -m "Message"</pre>
+		</div>
+		of
+		<div class="code">
+			<pre class="brush: bash">svn commit -m "Message"</pre>
+		</div>
+	</article>
+
+	<article class="snippet">
 		<h4>Merge</h4>
 		<div class="code">
 			<pre class="brush: bash">svn merge url</pre>
@@ -345,20 +358,27 @@ git commit -a -m "Message"
 			</div>
 		</div>
 	</article>
+
+	<article class="snippet">
+		<h4>Switch</h4>
+		<div class="code">
+			<pre class="brush: bash">svn sw url</pre>
+		</div>
+	</article>
 </section>
 
 
-<section id="links" class="section">
+<section id="links" class="syntax">
 	<h2>Links</h2>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>HTML5 Boilerplate</h4>
 		<div class="code">
 			<a class="external" href="http://html5boilerplate.com/"><span>html5boilerplate.com</span></a>
 		</div>
 	</article>
 
-	<article class="article">
+	<article class="snippet">
 		<h4>Bootstrap</h4>
 		<div class="code">
 			<a class="external" href="http://twitter.github.com/bootstrap/">twitter.github.com/bootstrap/</a>
@@ -367,7 +387,7 @@ git commit -a -m "Message"
 </section>
 
 
-<footer id="footer">
+<footer class="footer">
 	<p>code snippets for html, css, js, sass & compass, git & svn</p>
 </footer>
 
